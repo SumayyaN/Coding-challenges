@@ -2,9 +2,9 @@
 
 let count = 0;
 let sentence = "JavaScript is amazing!";
-for(let i = 0; i<sentence.length;i++){
-  if(sentence[i].toLocaleLowerCase() === 'a'){
-    count++
+for (let i = 0; i < sentence.length; i++) {
+  if (sentence[i].toLocaleLowerCase() === "a") {
+    count++;
   }
 }
 console.log(count);
@@ -111,6 +111,56 @@ console.log(count);
 
 // *********** 10.program to check if two arrays are equal
 
+// function areArraysEqual(array1, array2) {
+    
+//   if (array1.length !== array2.length) {
+//       return false; 
+//   }
+
+  
+//   for (let i = 0; i < array1.length; i++) {
+//       if (array1[i] !== array2[i]) {
+//           return false; 
+//       }
+//   }
+
+//   return true; 
+// }
+
+// let arr1 = [1, 2, 3, 4];
+// let arr2 = [1, 2, 3, 4];
+// let arr3 = [1, 2, 4, 3];
+// let arr4 =["hello","world"];
+// let arr5 = ["hello","world"];
+
+// console.log(areArraysEqual(arr1, arr2)); 
+// console.log(areArraysEqual(arr1, arr3)); 
+// console.log(areArraysEqual(arr4,arr5));
+
+// **************Develop a function findMinMax that takes an array of numbers and returns an object with the smallest and largest numbers
+
+// function findMinMax(numbers) {
+
+//   let min = numbers[0];
+//   let max = numbers[0];
+
+//   for (let num of numbers) {
+//       if (num < min) {
+//           min = num;
+//       }
+//       if (num > max) {
+//           max = num;
+//       }
+//   }
+
+//   return { min, max };
+// }
+
+
+// const numbers = [4, 1, 7, -2, 9, 0];
+// console.log(findMinMax(numbers)); 
+
+
 //************ 11. a program that filters out all numbers greater than 10 from array and returns the result
 
 // let myArray = [11,23,12,2,3,2,50];
@@ -118,10 +168,7 @@ console.log(count);
 //   if (myArray[i] > 10) {
 //     console.log(myArray[i]);
 //   }
-// }
-
-//********* 12.
-// **** a) function that takes a string and checks if it’s a palindrome
+// }me
 
 // function palindromeCheck(word) {
 //   let wordSplit = word.split("");
@@ -167,7 +214,37 @@ console.log(count);
 
 // ********a program that calculates the frequency of each character in a string and returns the result as an object.
 
+// function charFrequency(word) {
+//   let frequency = {};
+//   let letters = word.split("");
+
+//   for (let char of letters) {
+//     if (frequency[char]) {
+//       frequency[char] += 1;
+//     } else {
+//       frequency[char] = 1;
+//     }
+//   }
+
+//   return frequency;
+// }
+
+// let word = "hello";
+// console.log(charFrequency(word));
+
 // *********** 14.function that removes duplicate values from an array
+// function duplicateRemover(array) {
+//   let noDuplicate = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (!noDuplicate.includes(array[i])) {
+//       noDuplicate.push(array[i]);
+//     }
+//   }
+//   return noDuplicate;
+// }
+
+// let inputArray = [1, 2, 2, 3];
+// console.log(duplicateRemover(inputArray));
 
 // *********** 15.program that takes a string and capitalizes the first letter each word.
 
